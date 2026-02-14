@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Hammad | EREN 𒉭</title>
+
+<style>
+:root{
+  --bg:#141311;
+  --card:#1f1d19;
+  --gold:#d6b46c;
+  --soft:rgba(214,180,108,0.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:#eae6df;
+  line-height:1.6;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:clamp(36px,6vw,64px);
+  letter-spacing:2px;
+}
+
+.nickname{
+  margin-top:8px;
+  font-size:18px;
+  color:var(--gold);
+}
+
+.typing::after{
+  content:"|";
+  margin-left:6px;
+  animation:blink 1s infinite;
+  color:var(--gold);
+}
+
+@keyframes blink{
+  0%,50%,100%{opacity:1;}
+  25%,75%{opacity:0;}
+}
+
+.subtitle{
+  margin-top:10px;
+  font-size:14px;
+  opacity:.7;
+}
+
+.info{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+  width:min(95%,900px);
+}
+
+.info div{
+  background:var(--card);
+  padding:16px;
+  border-radius:14px;
+  font-size:14px;
+  border:1px solid var(--soft);
+  transition:.3s;
+}
+.info div:hover{
+  transform:translateY(-4px);
+  background:var(--soft);
+}
+
+/* SECTION */
+.section{
+  width:min(95%,1000px);
+  margin:80px auto;
+}
+
+.section h2{
+  color:var(--gold);
+  margin-bottom:20px;
+}
+
+/* SOCIALS */
+.socials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.socials a{
+  text-decoration:none;
+  color:var(--gold);
+  padding:10px 18px;
+  border-radius:999px;
+  border:1px solid var(--soft);
+  transition:.3s;
+}
+.socials a:hover{
+  background:var(--soft);
+  transform:translateY(-3px);
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project{
+  background:var(--card);
+  padding:20px;
+  border-radius:18px;
+  transition:.4s;
+}
+.project:hover{
+  transform:translateY(-6px);
+  background:var(--soft);
+}
+
+.project h3{
+  color:var(--gold);
+  margin-bottom:8px;
+}
+
+.project a{
+  text-decoration:none;
+  color:var(--gold);
+  font-size:14px;
+}
+
+/* CONTACT */
+form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+}
+
+input, textarea{
+  background:var(--card);
+  border:1px solid var(--soft);
+  padding:12px;
+  border-radius:10px;
+  color:#fff;
+  resize:none;
+}
+
+button{
+  background:var(--gold);
+  color:#000;
+  border:none;
+  padding:12px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+button:hover{
+  opacity:.85;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  opacity:.6;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="typing"><span id="typed"></span></h1>
+  <div class="nickname">EREN 𒉭</div>
+  <p class="subtitle">Student • Developer • NEET Aspirant</p>
+
+  <div class="info">
+    <div>Current Focus: NEET (90%) • Programming (10%)</div>
+    <div>Based in: New Delhi, India</div>
+    <div>Stacks I Like: HTML • AI-assisted Websites</div>
+    <div>Passions: Badminton • Soccer • UI Design</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>About</h2>
+  <p>
+    Hi, I’m Mohammad Hammad, a 17-year-old student in Class 11 at
+    Syed Abid Husain Sr. Sec School, Jamia Millia Islamia.
+    I completed my 10th grade with 97%.
+    Alongside academics, I’m an active badminton and soccer player.
+    I love coding, UI design, and creating clean, minimal, AI-assisted websites.
+  </p>
+</section>
+
+<!-- SOCIALS -->
+<section class="section">
+  <h2>Connect With Me</h2>
+  <div class="socials">
+    <a href="https://github.com/erenyeager-11" target="_blank">GitHub</a>
+    <a href="https://instagram.com/HMMEOWD" target="_blank">Instagram</a>
+    <a href="https://t.me/HAMMADGOTNOCHILL" target="_blank">Telegram</a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Mind Games</h3>
+      <a href="https://fun-time-eight.vercel.app/" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project">
+      <h3>Study Tracker: FOR PC/LAPTOP ONLY</h3>
+      <a href="https://focus-wmmx.onrender.com" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project">
+      <h3>Gentle Cards</h3>
+      <a href="https://erenyeager-11.github.io/gentle-notes/" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project">
+      <h3>Proposal Letters</h3>
+      <a href="https://for-you-gray-two.vercel.app/" target="_blank">Visit →</a>
+    </div>
+
+    <div class="project">
+      <h3>Link Hub</h3>
+      <a href="https://erenyeager-11.github.io/Arjuna-OG/" target="_blank">Visit →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact Me</h2>
+  <form onsubmit="sendMail(event)">
+    <input type="email" id="fromEmail" placeholder="Your Email" required>
+    <input type="text" id="subject" placeholder="Subject" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 • Mohammad Hammad (EREN 𒉭)
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const text="Mohammad Hammad";
+  const typed=document.getElementById("typed");
+  let i=0;
+  function type(){
+    if(i<text.length){
+      typed.textContent+=text.charAt(i);
+      i++;
+      setTimeout(type,70);
+    }
+  }
+  type();
+});
+
+function sendMail(e){
+  e.preventDefault();
+  const from=document.getElementById("fromEmail").value;
+  const subject=document.getElementById("subject").value;
+  const message=document.getElementById("message").value;
+
+  window.location.href=
+  `mailto:hammadpvt.2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: "+from+"\n\n"+message)}`;
+}
+</script>
+
+</body>
+</html>
